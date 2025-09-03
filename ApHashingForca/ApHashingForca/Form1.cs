@@ -54,8 +54,7 @@ namespace ApHashingForca
             string palavra = txtPalavra.Text;
             string dica = txtDica.Text;
             forca = new Forca(palavra, dica);
-            if (tabelaDeHash.Existe(forca)) 
-                feeg
+            tabelaDeHash.Excluir(forca);
         }
     }
 }
