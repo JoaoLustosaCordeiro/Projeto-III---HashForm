@@ -2,14 +2,14 @@
 using ApHashingPessoa;
 
 
-class HashAprimorado<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
+class HashSondagemQuadratica<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
 {
     const int tamanhoPadrao = 10007;
     T[] tabelaDeHash;
 
-    public HashAprimorado() : this(tamanhoPadrao) { }
+    public HashSondagemQuadratica() : this(tamanhoPadrao) { }
 
-    public HashAprimorado(int tamanhoDesejado)
+    public HashSondagemQuadratica(int tamanhoDesejado)
     {
         tabelaDeHash = new T[tamanhoDesejado];
     }

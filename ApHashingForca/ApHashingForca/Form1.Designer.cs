@@ -35,8 +35,8 @@
             this.btnDuploHash = new System.Windows.Forms.RadioButton();
             this.lblPalavra = new System.Windows.Forms.Label();
             this.lblDica = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPalavra = new System.Windows.Forms.TextBox();
+            this.txtDica = new System.Windows.Forms.TextBox();
             this.btnIncluir = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
@@ -65,6 +65,7 @@
             this.btnBucketHash.TabStop = true;
             this.btnBucketHash.Text = "Bucket Hash";
             this.btnBucketHash.UseVisualStyleBackColor = true;
+            this.btnBucketHash.CheckedChanged += new System.EventHandler(this.btnBucketHash_CheckedChanged);
             // 
             // btnSgmLinear
             // 
@@ -76,6 +77,7 @@
             this.btnSgmLinear.TabStop = true;
             this.btnSgmLinear.Text = "Sondagem linear";
             this.btnSgmLinear.UseVisualStyleBackColor = true;
+            this.btnSgmLinear.CheckedChanged += new System.EventHandler(this.btnSgmLinear_CheckedChanged);
             // 
             // btnSdmQuadratica
             // 
@@ -87,6 +89,7 @@
             this.btnSdmQuadratica.TabStop = true;
             this.btnSdmQuadratica.Text = "Sondagem quadrática";
             this.btnSdmQuadratica.UseVisualStyleBackColor = true;
+            this.btnSdmQuadratica.CheckedChanged += new System.EventHandler(this.btnSdmQuadratica_CheckedChanged);
             // 
             // btnDuploHash
             // 
@@ -98,6 +101,7 @@
             this.btnDuploHash.TabStop = true;
             this.btnDuploHash.Text = "Duplo Hash";
             this.btnDuploHash.UseVisualStyleBackColor = true;
+            this.btnDuploHash.CheckedChanged += new System.EventHandler(this.btnDuploHash_CheckedChanged);
             // 
             // lblPalavra
             // 
@@ -117,19 +121,19 @@
             this.lblDica.TabIndex = 6;
             this.lblDica.Text = "Dica:";
             // 
-            // textBox1
+            // txtPalavra
             // 
-            this.textBox1.Location = new System.Drawing.Point(296, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtPalavra.Location = new System.Drawing.Point(296, 46);
+            this.txtPalavra.Name = "txtPalavra";
+            this.txtPalavra.Size = new System.Drawing.Size(100, 20);
+            this.txtPalavra.TabIndex = 7;
             // 
-            // textBox2
+            // txtDica
             // 
-            this.textBox2.Location = new System.Drawing.Point(296, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(453, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtDica.Location = new System.Drawing.Point(296, 77);
+            this.txtDica.Name = "txtDica";
+            this.txtDica.Size = new System.Drawing.Size(453, 20);
+            this.txtDica.TabIndex = 8;
             // 
             // btnIncluir
             // 
@@ -139,6 +143,7 @@
             this.btnIncluir.TabIndex = 9;
             this.btnIncluir.Text = "Incluir";
             this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.btnIncluir_Click);
             // 
             // btnExcluir
             // 
@@ -148,6 +153,7 @@
             this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -188,7 +194,6 @@
             this.gbTecnicas.TabIndex = 14;
             this.gbTecnicas.TabStop = false;
             this.gbTecnicas.Text = "Técnicas de Hashing";
-            this.gbTecnicas.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // lsbListagem
             // 
@@ -210,14 +215,13 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnIncluir);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDica);
+            this.Controls.Add(this.txtPalavra);
             this.Controls.Add(this.lblDica);
             this.Controls.Add(this.lblPalavra);
             this.Controls.Add(this.lblTecnicas);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbTecnicas.ResumeLayout(false);
             this.gbTecnicas.PerformLayout();
             this.ResumeLayout(false);
@@ -234,8 +238,8 @@
         private System.Windows.Forms.RadioButton btnDuploHash;
         private System.Windows.Forms.Label lblPalavra;
         private System.Windows.Forms.Label lblDica;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPalavra;
+        private System.Windows.Forms.TextBox txtDica;
         private System.Windows.Forms.Button btnIncluir;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAlterar;

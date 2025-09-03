@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using ApHashingPessoa;
 
-class HashSimples<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
+
+class HashDuplo<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
 {
     const int tamanhoPadrao = 10007;
     T[] tabelaDeHash;
 
-    public HashSimples() : this(tamanhoPadrao) { }
+    public HashDuplo() : this(tamanhoPadrao) { }
 
-    public HashSimples(int tamanhoDesejado)
+    public HashDuplo(int tamanhoDesejado)
     {
         tabelaDeHash = new T[tamanhoDesejado];
     }
@@ -16,7 +17,7 @@ class HashSimples<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
     private int Hash(string chave)
     {
         int tot = 0;
-        for (int i = 0; i < chave.Trim().Length; i++)
+        for (int i = 0; i < chave.Length; i++) 
             tot += (int)chave[i];
         return tot % tabelaDeHash.Length;
     }
@@ -43,15 +44,7 @@ class HashSimples<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
         for (int i = 0; i < tabelaDeHash.Length; i++)
             if (tabelaDeHash[i] != null)
                 saida.Add($"{i,5} : {tabelaDeHash[i]}");
-        //else
-        // saida.Add($"{i} ");
         return saida;
-    }
-
-    public void Limpar()
-    {
-        for (int i = 0; i < tabelaDeHash.Length; i++)
-            tabelaDeHash[i] = default(T);
     }
 
     public bool Excluir(T dado)
@@ -63,5 +56,11 @@ class HashSimples<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
             return true;
         }
         return false;
+    }
+
+    public void Limpar()
+    {
+        for (int i = 0; i < tabelaDeHash.Length; i++)
+            tabelaDeHash[i] = default(T);
     }
 }

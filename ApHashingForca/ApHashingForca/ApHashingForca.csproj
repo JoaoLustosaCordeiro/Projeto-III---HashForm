@@ -54,8 +54,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HashAprimorado.cs" />
-    <Compile Include="HashSimples.cs" />
+    <Compile Include="HashDuplo.cs" />
+    <Compile Include="HashSondagemQuadratica .cs" />
+    <Compile Include="HashSondagemLinear.cs" />
     <Compile Include="ICriterioDeSeparacao.cs" />
     <Compile Include="IRegistro.cs" />
     <Compile Include="ITabelaDeHash.cs" />

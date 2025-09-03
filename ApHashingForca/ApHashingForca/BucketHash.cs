@@ -41,32 +41,31 @@ public class BucketHash<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
         int onde = 0;
         if (!Existe(dado, out onde))
             return false;
-        dados[onde].(dado);
+        dados[onde].Remover(dado);
         return true;
     }
 
     public bool Existe(T dado, out int onde)
     {
         onde = Hash(dado.Chave);
-        return dados[onde].Contains(dado);
+        return dados[onde].Equals(dado);
     }
 
     public List<string> Conteudo()
     {
         List<string> saida = new List<string>();
-        for (int i = 0; i < dados.Length; i++)
-            if (dados[i].Count > 0)
+        for (int i = 0; i < dados.Count; i++)
+            if (dados[i].QuantosNos > 0)
             {
                 string linha = $"{i,5} : ";
-                foreach (string chave in dados[i])
-                    linha += " | " + chave;
+                dados[i].ExibirLista();
                 saida.Add(linha);
             }
         return saida;
     }
     public void Limpar()
     {
-        for (int i = 0; i < dados.Length; i++)
+        for (int i = 0; i < dados.Count; i++)
             dados[i] = null;
     }
 }

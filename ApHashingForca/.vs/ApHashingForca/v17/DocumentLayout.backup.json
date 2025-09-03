@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\listasimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\listasimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\itabeladehash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\itabeladehash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\buckethash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\buckethash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\hashaprimorado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\hashaprimorado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\hashsimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\hashsimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\icriteriodeseparacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\icriteriodeseparacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\iregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\iregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\forca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\forca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|z:\\segundo ano\\estrutura de dados\\exemplos\\segundo semestre\\hashing\\aphashingforca\\aphashingforca\\nolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F74B-6748-4165-A85F-839E815A2E6D}|ApHashingForca\\ApHashingForca.csproj|solutionrelative:aphashingforca\\nolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +126,125 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ITabelaDeHash.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\ITabelaDeHash.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\ITabelaDeHash.cs",
+              "ToolTip": "ApHashingForca/ITabelaDeHash.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "ApHashingForca",
+              "OverriddenToolTip": "ApHashingForca/ITabelaDeHash.cs",
+              "WhenOpened": "2025-08-27T13:30:47.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BucketHash.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\BucketHash.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\BucketHash.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\BucketHash.cs",
+              "RelativeToolTip": "ApHashingForca\\BucketHash.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:30:53.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ListaSimples.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\ListaSimples.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\ListaSimples.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\ListaSimples.cs",
+              "RelativeToolTip": "ApHashingForca\\ListaSimples.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:34:30.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRegistro.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\IRegistro.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\IRegistro.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\IRegistro.cs",
+              "RelativeToolTip": "ApHashingForca\\IRegistro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:30:49.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HashSimples.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\HashSimples.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\HashSimples.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\HashSimples.cs",
+              "RelativeToolTip": "ApHashingForca\\HashSimples.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:30:51.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICriterioDeSeparacao.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\ICriterioDeSeparacao.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\ICriterioDeSeparacao.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\ICriterioDeSeparacao.cs",
+              "RelativeToolTip": "ApHashingForca\\ICriterioDeSeparacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:34:48.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Forca.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Forca.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\Forca.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Forca.cs",
+              "RelativeToolTip": "ApHashingForca\\Forca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:02:54.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HashAprimorado.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\HashAprimorado.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\HashAprimorado.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\HashAprimorado.cs",
+              "RelativeToolTip": "ApHashingForca\\HashAprimorado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:30:52.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Program.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\Program.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Program.cs",
+              "RelativeToolTip": "ApHashingForca\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:30:42.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Form1.cs",
               "RelativeDocumentMoniker": "ApHashingForca\\Form1.cs",
@@ -87,6 +253,49 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T13:30:15.894Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\Form1.Designer.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Form1.Designer.cs",
+              "RelativeToolTip": "ApHashingForca\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:14:27.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Form1.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\Form1.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\Form1.cs",
+              "RelativeToolTip": "ApHashingForca\\Form1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA6wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:09:59.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NoLista.cs",
+              "DocumentMoniker": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\NoLista.cs",
+              "RelativeDocumentMoniker": "ApHashingForca\\NoLista.cs",
+              "ToolTip": "Z:\\Segundo Ano\\Estrutura de Dados\\Exemplos\\Segundo Semestre\\Hashing\\ApHashingForca\\ApHashingForca\\NoLista.cs",
+              "RelativeToolTip": "ApHashingForca\\NoLista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:34:37.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
