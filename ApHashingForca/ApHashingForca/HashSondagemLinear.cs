@@ -38,6 +38,15 @@ class HashSondagemLinear<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
         return tabelaDeHash[posicao].Equals(dado);
     }
 
+    public bool Alterar(T dado)
+    {
+        int onde = 0;
+        if (!Existe(dado, out onde))
+            return false;
+        tabelaDeHash[onde] = dado;
+        return true;
+    }
+
     public List<string> Conteudo()
     {
         var saida = new List<string>();

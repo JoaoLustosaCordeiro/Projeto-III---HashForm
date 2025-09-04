@@ -44,6 +44,7 @@
             this.lblLista = new System.Windows.Forms.Label();
             this.gbTecnicas = new System.Windows.Forms.GroupBox();
             this.lsbListagem = new System.Windows.Forms.ListBox();
+            this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
             this.gbTecnicas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,6 +164,7 @@
             this.btnAlterar.TabIndex = 11;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnListar
             // 
@@ -172,6 +174,7 @@
             this.btnListar.TabIndex = 12;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // lblLista
             // 
@@ -202,6 +205,10 @@
             this.lsbListagem.Name = "lsbListagem";
             this.lsbListagem.Size = new System.Drawing.Size(748, 264);
             this.lsbListagem.TabIndex = 15;
+            // 
+            // dlgAbrir
+            // 
+            this.dlgAbrir.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -247,6 +254,7 @@
         private System.Windows.Forms.Label lblLista;
         private System.Windows.Forms.GroupBox gbTecnicas;
         private System.Windows.Forms.ListBox lsbListagem;
+        private System.Windows.Forms.OpenFileDialog dlgAbrir;
     }
 }
 

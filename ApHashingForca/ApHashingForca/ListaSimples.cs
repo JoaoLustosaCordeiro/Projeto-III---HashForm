@@ -1,69 +1,196 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Microsoft.Win32;
 
-public class ListaSimples<Dado> where Dado : IComparable<Dado>
+public class ListaSimples<T>
+             where T : IComparable<T>, IRegistro<T>, IEquatable<T>, new()
 {
-  NoLista<Dado> primeiro,     // aponta o primeiro nó da lista ligada
-                ultimo,       // aponta o último nó da lista ligada
-                atual,        // aponta um nó que está sendo visitado no momento
-                anterior;     // aponta o nó que vem antes do nó apontado por atual
-  int quantosNos;             // contagem de quantos nós há ligados na lista
-  bool primeiroAcessoDoPercurso;
+    NoLista<T> primeiro, ultimo, anterior, atual;
+    int quantosNos;
+    bool primeiroAcessoDoPercurso;
 
-  public ListaSimples()
-  {
-    primeiro = ultimo = atual = anterior = null;
-    quantosNos = 0;
-    primeiroAcessoDoPercurso = true;
-  }
+    // exercício 1
+    public int ContarNos()
+    {
+        int contador = 0;
+        atual = primeiro;
+        while (atual != null)
+        {
+            contador++;
+            atual = atual.Prox;
+        }
+        return contador;
+    }
 
-  public bool EstaVazia
-  {
-    get => primeiro == null;
-  }
+    // exercício 3
+    public ListaSimples<T> Juntar(ListaSimples<T> l2)
+    {
+        var lista3 = new ListaSimples<T>();
+        this.atual = this.primeiro;
+        l2.atual = l2.primeiro;
+        while (this.atual != null && l2.atual != null)
+            if (this.atual.Info.CompareTo(l2.atual.Info) < 0)
+            {
+                lista3.InserirAposFim(this.atual.Info);
+                this.atual = this.atual.Prox;
+            }
+            else
+              if (l2.atual.Info.CompareTo(this.atual.Info) < 0)
+            {
+                lista3.InserirAposFim(l2.atual.Info);
+                l2.atual = l2.atual.Prox;
+            }
+            else
+            {
+                lista3.InserirAposFim(this.atual.Info);
+                this.atual = this.atual.Prox;
+                l2.atual = l2.atual.Prox;
+            }
 
-  public int QuantosNos
-  {
-    get => quantosNos;    // retorna o valor do atributo quantosNos
-  }
+        while (this.atual != null)
+        {
+            lista3.InserirAposFim(this.atual.Info);
+            this.atual = this.atual.Prox;
+        }
 
-  public void InserirAntesDoInicio(Dado novoDado)
-  {
-    NoLista<Dado> novoNo = new NoLista<Dado>(novoDado);
-    // var novoNo = new NoLista<Dado>(novoDado);
+        while (l2.atual != null)
+        {
+            lista3.InserirAposFim(l2.atual.Info);
+            l2.atual = l2.atual.Prox;
+        }
 
-    if (EstaVazia)        // se a lista está vazia, estamos
-        ultimo = novoNo;   // incluindo o 1o e o último nós!
+        return lista3;
 
-    novoNo.Prox = primeiro; 
+    }
 
-    primeiro = novoNo;  // o novo nó recém incluído passa a ser o primeiro da lista
-    quantosNos++;
-  }
+    // exercício 4
 
-  public void InserirAposOFim(Dado novoDado)
-  {
-    var novoNo = new NoLista<Dado>(novoDado);
-    if (EstaVazia)
-      primeiro = novoNo;
-    else
-      ultimo.Prox = novoNo;
+    public void Inverter()
+    {
+        if (!EstaVazia)
+        {
+            var um = primeiro;
+            var dois = primeiro.Prox;
+            while (dois != null)
+            {
+                var tres = dois.Prox;
+                dois.Prox = um;
+                um = dois;
+                dois = tres;
+            }
+            ultimo = primeiro;
+            primeiro.Prox = null;
+            primeiro = um;
+        }
+    }
+    public void Listar(ListBox lsb)
+    {
+        lsb.Items.Clear();
+        atual = primeiro;     // posiciona ponteiro de percurso no 1o nó
+        while (atual != null) // enquanto houver nós a visitar
+        {
+            lsb.Items.Add(atual.Info);  // inclui no listbox os dados do nó visitado agora
+            atual = atual.Prox;         // avança o ponteiro de percurso para o nó seguinte
+        }
+    }
 
-    ultimo = novoNo;  // o novo nó recém incluído passa a ser o último da lista
-    quantosNos++;
-  }
+    public void ExibirLista()
+    {
+        Console.Clear();  // limpa a tela em modo console
+        atual = primeiro;
+        while (atual != null)
+        {
+            Console.WriteLine(atual.Info);
+            atual = atual.Prox;
+        }
+    }
 
-    public bool Existe(Dado outroProcurado)
+    public ListaSimples()
+    {
+        primeiro = ultimo = anterior = atual = null;
+        quantosNos = 0;
+        primeiroAcessoDoPercurso = false;
+    }
+
+    public void PercorrerLista()
+    {
+        atual = primeiro;
+        while (atual != null)
+        {
+            Console.WriteLine(atual.Info);
+            atual = atual.Prox;
+        }
+    }
+    public bool EstaVazia
+    {
+        get => primeiro == null;
+    }
+    public NoLista<T> Primeiro
+    {
+        get => primeiro;
+    }
+    public NoLista<T> Ultimo
+    {
+        get => ultimo;
+    }
+    public int QuantosNos
+    {
+        get => quantosNos;
+    }
+
+    public void InserirAntesDoInicio(T novoDado)
+    {
+        var novoNo = new NoLista<T>(novoDado);
+
+        if (EstaVazia)
+            ultimo = novoNo;
+
+        novoNo.Prox = primeiro;
+        primeiro = novoNo;
+        quantosNos++;
+    }
+
+    public void InserirAposFim(T novoDado)
+    {
+        var novoNo = new NoLista<T>(novoDado);
+
+        if (EstaVazia)
+            primeiro = novoNo;
+        else
+            ultimo.Prox = novoNo;
+
+        ultimo = novoNo;
+        quantosNos++;
+    }
+
+    public void InserirAposFim(NoLista<T> noExistente)
+    {
+        if (noExistente != null)
+        {
+            if (EstaVazia)
+                primeiro = noExistente;
+            else
+                ultimo.Prox = noExistente;
+
+            ultimo = noExistente;
+            noExistente.Prox = null;
+            quantosNos++;
+        }
+    }
+
+    public bool Existe(T outroProcurado)
     {
         anterior = null;
         atual = primeiro;
 
-        // Em seguida, é verificado se a lista está vazia. Caso esteja, é
-        // retornado false ao local de chamada, indicando que a chave não foi
-        // encontrada, e atual e anterior ficam valendo null
+        //	Em seguida, é verificado se a lista está vazia. Caso esteja, é
+        //	retornado false ao local de chamada, indicando que a chave não foi
+        //	encontrada, e atual e anterior ficam valendo null
         if (EstaVazia)
             return false;
 
@@ -82,15 +209,15 @@ public class ListaSimples<Dado> where Dado : IComparable<Dado>
             return false;
         }
 
-        // caso não tenha sido definido que a chave está fora dos limites de
-        // chaves da lista, vamos procurar no seu interior
-        // o apontador atual indica o primeiro nó da lista e consideraremos que
-        // ainda não achou a chave procurada nem chegamos ao final da lista
+        //	caso não tenha sido definido que a chave está fora dos limites de 
+        //	chaves da lista, vamos procurar no seu interior
+        //	o apontador atual indica o primeiro nó da lista e consideraremos que
+        //	ainda não achou a chave procurada nem chegamos ao final da lista
         bool achou = false;
         bool fim = false;
 
-        // repete os comandos abaixo enquanto não achou o RA nem chegou ao
-        // final da pesquisa
+        //	repete os comandos abaixo enquanto não achou o RA nem chegou ao
+        //	final da pesquisa
         while (!achou && !fim)
             // se o apontador atual vale null, indica final físico da lista
             if (atual == null)
@@ -126,8 +253,45 @@ public class ListaSimples<Dado> where Dado : IComparable<Dado>
         return achou;   // devolve o valor da variável achou, que indica
     }
 
+    public NoLista<T> Atual => atual;
 
-    public bool Remover(Dado dadoARemover)
+    public bool InserirEmOrdem(T dados)
+    {
+        if (Existe(dados))     // Existe() configura anterior e atual
+            return false;
+
+        // aqui temos certeza de que a chave não existe
+        // guardaremos os dados no novo nó
+        if (EstaVazia)                  // se a lista está vazia, então o 	
+            InserirAntesDoInicio(dados);  // dado ficará como primeiro da lista
+        else
+            // testa se nova chave < primeira chave
+            if (anterior == null && atual != null)
+            InserirAntesDoInicio(dados); // liga novo nó antes do primeiro
+        else
+              // testa se nova chave > última chave
+              if (anterior != null && atual == null)
+            InserirAposFim(dados);
+        else
+            InserirNoMeio(dados);  // insere entre os nós anterior e atual
+
+        return true;  // conseguiu incluir pois não é repetido
+    }
+
+    private void InserirNoMeio(T dados)
+    {
+        // Existe() encontrou intervalo de inclusão do novo nó (entre anterior e atual)
+
+        var novo = new NoLista<T>(dados);
+        anterior.Prox = novo;   // liga anterior ao novo
+        novo.Prox = atual;      // e novo no atual
+
+        if (anterior == ultimo)  // se incluiu ao final da lista,
+            ultimo = novo;        // atualiza o apontador ultimo
+        quantosNos++;            // incrementa número de nós da lista     	}	
+    }
+
+    public bool Remover(T dadoARemover)
     {
         if (EstaVazia)
             return false;
@@ -159,28 +323,5 @@ public class ListaSimples<Dado> where Dado : IComparable<Dado>
         quantosNos--;
         return true;
     }
-
-  public void ExibirLista()
-  {
-    Console.Clear();  // limpa a tela em modo console
-    atual = primeiro;
-    while (atual != null)
-    {
-      Console.WriteLine(atual.Info);
-      atual = atual.Prox;
-    }
-  }
-
-  public List<Dado> ListarDados()
-  {
-    var listaDeDados = new List<Dado>();
-    atual = primeiro;
-    while (atual != null)
-    {
-      listaDeDados.Add(atual.Info);
-      atual = atual.Prox;
-    }
-    return listaDeDados;
-  }
-
 }
+

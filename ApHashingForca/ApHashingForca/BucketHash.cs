@@ -32,7 +32,7 @@ public class BucketHash<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
         {
             return false; // ja tem esse valor na lista
         }
-        dados[valorDeHash].InserirAposOFim(novoDado);
+        dados[valorDeHash].InserirAposFim(novoDado);
         return true;
     }
 
@@ -49,6 +49,16 @@ public class BucketHash<T> : ITabelaDeHash<T> where T : IRegistro<T>, new()
     {
         onde = Hash(dado.Chave);
         return dados[onde].Equals(dado);
+    }
+
+    public bool Alterar(T dado)
+    {
+        int onde = 0;
+        if (!Existe(dado, out onde))
+            return false;
+        dados[onde].Remover(dado);
+        dados[onde].InserirEmOrdem(dado);
+        return true;
     }
 
     public List<string> Conteudo()
