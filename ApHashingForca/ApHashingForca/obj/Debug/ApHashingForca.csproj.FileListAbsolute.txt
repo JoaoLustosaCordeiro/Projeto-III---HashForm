@@ -8,3 +8,13 @@ C:\Users\João\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingF
 C:\Users\João\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.csproj.CoreCompileInputs.cache
 C:\Users\João\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.exe
 C:\Users\João\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.pdb
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\bin\Debug\ApHashingForca.exe.config
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\bin\Debug\ApHashingForca.exe
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\bin\Debug\ApHashingForca.pdb
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.csproj.AssemblyReference.cache
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.Form1.resources
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.Properties.Resources.resources
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.csproj.GenerateResource.cache
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.csproj.CoreCompileInputs.cache
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.exe
+C:\Users\u24134\Documents\GitHub\Projeto-III---HashForm\ApHashingForca\ApHashingForca\obj\Debug\ApHashingForca.pdb

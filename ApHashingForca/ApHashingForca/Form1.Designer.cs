@@ -45,6 +45,7 @@
             this.gbTecnicas = new System.Windows.Forms.GroupBox();
             this.lsbListagem = new System.Windows.Forms.ListBox();
             this.dlgAbrir = new System.Windows.Forms.OpenFileDialog();
+            this.dlgSalvar = new System.Windows.Forms.SaveFileDialog();
             this.gbTecnicas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -210,6 +211,9 @@
             // 
             this.dlgAbrir.FileName = "openFileDialog1";
             // 
+            // dlgSalvar
+            // 
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +233,8 @@
             this.Controls.Add(this.lblTecnicas);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbTecnicas.ResumeLayout(false);
             this.gbTecnicas.PerformLayout();
             this.ResumeLayout(false);
@@ -255,6 +261,7 @@
         private System.Windows.Forms.GroupBox gbTecnicas;
         private System.Windows.Forms.ListBox lsbListagem;
         private System.Windows.Forms.OpenFileDialog dlgAbrir;
+        private System.Windows.Forms.SaveFileDialog dlgSalvar;
     }
 }
 

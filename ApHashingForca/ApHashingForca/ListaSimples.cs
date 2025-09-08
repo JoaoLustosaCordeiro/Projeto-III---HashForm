@@ -101,11 +101,10 @@ public class ListaSimples<T>
 
     public void ExibirLista()
     {
-        Console.Clear();  // limpa a tela em modo console
         atual = primeiro;
         while (atual != null)
         {
-            Console.WriteLine(atual.Info);
+            Console.Write(atual.Info + " | ");
             atual = atual.Prox;
         }
     }

@@ -64,7 +64,7 @@ public class Forca : IComparable<Forca>, IEquatable<Forca>, IRegistro<Forca>
         //Palavra = linhaDeDados.Substring(inicioPalavra, tamanhoPalavra);
         Palavra = linhaDeDados.Substring(0, tamanhoPalavra).Trim(); // Remove espaços extras
         //Dica = linhaDeDados.Substring(inicioDica);
-        Dica = linhaDeDados.Length > tamanhoPalavra ? linhaDeDados.Substring(tamanhoPalavra).Trim() : "";
+        Dica = linhaDeDados.Substring(tamanhoPalavra + 1).Trim();
     }
 
     public void EscreverRegistro(StreamWriter arquivo)
@@ -85,5 +85,10 @@ public class Forca : IComparable<Forca>, IEquatable<Forca>, IRegistro<Forca>
     public override string ToString()
     {
         return palavra + " " + dica;
+    }
+
+    public string FormatoDeArquivo()
+    {
+        return $"{palavra}{dica}";
     }
 }

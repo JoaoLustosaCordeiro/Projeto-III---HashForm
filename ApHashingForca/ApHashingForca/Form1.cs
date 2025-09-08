@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,26 +17,11 @@ namespace ApHashingForca
     public partial class Form1 : Form
     {
         ITabelaDeHash<Forca> tabelaDeHash;
+        Forca forca;
 
         public Form1()  
         {
             InitializeComponent();
-        }
-
-        private void FazerLeitura()
-        {
-            if (dlgAbrir.ShowDialog() == DialogResult.OK)  // usuário pressionou botão Abrir?
-            {
-                StreamReader arquivo = new StreamReader(dlgAbrir.FileName);
-                string linha = "";
-                while (!arquivo.EndOfStream)  // enquanto não acabou o arquivo
-                {
-                    linha = arquivo.ReadLine();
-                    Forca forca = new Forca();
-                    tabelaDeHash.Incluir();
-                }
-                arquivo.Close();
-            }
         }
 
         private void btnBucketHash_CheckedChanged(object sender, EventArgs e)
@@ -64,9 +50,9 @@ namespace ApHashingForca
             {
                 var novaPalavra = new Forca(txtPalavra.Text, txtDica.Text);
                 if (!tabelaDeHash.Incluir(novaPalavra))
-                    MessageBox.Show("Palavra repetida.");
-                else
                     MessageBox.Show("Palavra incluida em ordem.");
+                else
+                    MessageBox.Show("Palavra repetida.");
             }
         }
 
@@ -100,6 +86,47 @@ namespace ApHashingForca
             var dadosDaLista = tabelaDeHash.Conteudo();
             foreach (string palavra in dadosDaLista)
                 lsbListagem.Items.Add(palavra);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string fileContent = string.Empty;
+            string filePath = string.Empty;
+
+            dlgAbrir.InitialDirectory = "c:\\";
+            dlgAbrir.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            dlgAbrir.RestoreDirectory = true;
+
+            if (dlgAbrir.ShowDialog() == DialogResult.OK)
+            {
+                filePath = dlgAbrir.FileName;
+
+                var fileStream = dlgAbrir.OpenFile();
+
+                using (StreamReader arquivo = new StreamReader(fileStream))
+                {
+                    string linha = "";
+                    while (!arquivo.EndOfStream)  // enquanto não acabou o arquivo
+                    {
+                        linha = arquivo.ReadLine();
+                        forca = new Forca();
+                        forca.LerRegistro(arquivo);
+                        tabelaDeHash.Incluir(forca);
+                    }
+                }
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (dlgSalvar.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter arquivo = new StreamWriter(dlgSalvar.FileName);
+                List<string> conteudo = tabelaDeHash.Conteudo();
+                for (int i = 0; i < conteudo.Count; i++)
+                    arquivo.WriteLine(conteudo[i].ToString());
+                arquivo.Close();
+            }
         }
     }
 }
